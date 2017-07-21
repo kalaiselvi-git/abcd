@@ -27,20 +27,20 @@ public class UserDetails_grid
 	public void sflogin() 
 	{
 		//driver.get("http://c.ap5.visual.force.com/apex/Home");
-		driver.findElement(By.id("username")).sendKeys("kalai_selvi@gmail.com");
-		driver.findElement(By.id("password")).sendKeys("kalaisf1");
+		driver.findElement(By.id("username")).sendKeys("test-vrlaok03mfpj@demo_company.net");
+		driver.findElement(By.id("password")).sendKeys("9^(H$5Mor1");
 		driver.findElement(By.id("Login")).click();
 		driver.manage().timeouts().implicitlyWait(100,TimeUnit.SECONDS);
 		System.out.println("Salesforce Login succesfully!!!");
 		//driver.navigate().to("http://c.ap5.visual.force.com/apex/Home");
-		driver.get("http://c.ap5.visual.force.com/apex/Home");
+		driver.get("https://java-velocity-7507-dev-ed--c.cs90.visual.force.com/apex/Home?core.apexpages.request.devconsole=1");
 	}
 
 	@Parameters("browser")
 	@BeforeTest
 	public void testgrid(String browser) throws MalformedURLException 
 	{
-		String URL = "http://c.ap5.visual.force.com/apex/Home";
+		String URL = "https://java-velocity-7507-dev-ed--c.cs90.visual.force.com/apex/Home?core.apexpages.request.devconsole=1";
 		if (browser.equalsIgnoreCase("firefox")) 
 		{
 			System.out.println("Executing on Firefox");
@@ -150,7 +150,7 @@ else
 
 	
 		//click Login
-	    driver.navigate().to("http://c.ap5.visual.force.com/apex/Home");
+	    driver.navigate().to("https://java-velocity-7507-dev-ed--c.cs90.visual.force.com/apex/Home?core.apexpages.request.devconsole=1");
 		driver.findElement(By.name("j_id0:j_id2:j_id5")).click();
 }
 	@Test(priority =1)
