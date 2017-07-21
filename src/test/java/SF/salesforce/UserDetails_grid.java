@@ -61,7 +61,7 @@ public class UserDetails_grid
 		{
 			System.out.println("Executing on Chrome");
 			System.out.println("*******************");
-			String Node = "http://192.168.100.110:3334/wd/hub";
+			String Node = "http://192.168.100.110:3335/wd/hub";
 			DesiredCapabilities cap = DesiredCapabilities.chrome();
 			cap.setBrowserName("chrome");
 			cap.setPlatform(Platform.WIN10);
@@ -93,7 +93,7 @@ if ("UserDetails-Home".equals(driver.getTitle()))
 			
 		//Verify Signup Page
 			String stitle = driver.getTitle();
-	if("Signup".equals(stitle)) 
+	if("UserDetails-SignupPage".equals(stitle)) 
 	{
 				System.out.println("Test 2: Passed");
 				System.out.println("Redirecting to Signup Page");
@@ -160,7 +160,7 @@ else
 	{
 		// verify it is redirected to Login Page
 		String login = driver.getTitle();
-		if ("LoginPage".equals(login)) 
+		if ("UserDetails-LoginPage".equals(login)) 
 		{
 			System.out.println("Test 4: passed");
 			System.out.println("Redirecting to Login Page");
@@ -180,7 +180,7 @@ else
 		// verify it is redirected to Userdetails Page
 		
 		String user = driver.getTitle();
-		if ("UserDetail".equals(user)) 
+		if ("UserDetails-LoginUserDetails".equals(user)) 
 		{
 			System.out.println("Test 5: passed");
 			System.out.println("Redirecting to UserDetail-Page");
