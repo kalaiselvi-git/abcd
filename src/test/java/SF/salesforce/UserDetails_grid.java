@@ -101,7 +101,7 @@ if ("UserDetails-Home".equals(driver.getTitle()))
 				driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
 		//Send values for signup Page		
 				driver.findElement(By.name("j_id0:j_id31:name")).sendKeys("krish");
-				driver.findElement(By.name("j_id0:j_id31:email")).sendKeys("krish@gmail.com"+sdf.format(cal.getTime()));
+				driver.findElement(By.name("j_id0:j_id31:email")).sendKeys("krish"+sdf.format(cal.getTime())"@gmail.com");
 				//driver.findElement(By.name("j_id0:j_id31:username")).sendKeys("krish16:38:40a");
 				driver.findElement(By.name("j_id0:j_id31:username")).sendKeys("krish"+sdf.format(cal.getTime()));
 				driver.findElement(By.name("j_id0:j_id31:pwd")).sendKeys("krish");
