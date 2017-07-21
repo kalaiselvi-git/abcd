@@ -26,9 +26,11 @@ public class UserDetails_grid
 	//Salesforce Login
 	public void sflogin() 
 	{
+		driver.manage().timeouts().implicitlyWait(100,TimeUnit.SECONDS);
 		//driver.get("http://c.ap5.visual.force.com/apex/Home");
 		driver.findElement(By.id("username")).sendKeys("test-vrlaok03mfpj@demo_company.net");
 		driver.findElement(By.id("password")).sendKeys("9^(H$5Mor1");
+		driver.manage().timeouts().implicitlyWait(100,TimeUnit.SECONDS);
 		driver.findElement(By.id("Login")).click();
 		driver.manage().timeouts().implicitlyWait(100,TimeUnit.SECONDS);
 		System.out.println("Salesforce Login succesfully!!!");
