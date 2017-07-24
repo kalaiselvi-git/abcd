@@ -61,7 +61,7 @@ public class UserDetails_grid
 		{
 			System.out.println("Executing on Chrome");
 			System.out.println("*******************");
-			String Node = "http://182.19.39.173:8090:3335/wd/hub";
+			String Node = "http://182.19.39.173:3335/wd/hub";
 			DesiredCapabilities cap = DesiredCapabilities.chrome();
 			cap.setBrowserName("chrome");
 			cap.setPlatform(Platform.WIN10);
