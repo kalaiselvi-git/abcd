@@ -21,16 +21,15 @@ public class UserDetails_grid
         SimpleDateFormat sdf = new SimpleDateFormat("HH:mm:ss");
 	public WebDriver driver;
 	public String URL, Node;
-        String un=env.Username;
-	String pwd=env.Password;
+       
 	@BeforeClass
 	//Salesforce Login
 	public void sflogin() 
 	{
 		driver.manage().timeouts().implicitlyWait(100,TimeUnit.SECONDS);
 		//driver.get("http://c.ap5.visual.force.com/apex/Home");
-		driver.findElement(By.id("username")).sendKeys(un);
-		driver.findElement(By.id("password")).sendKeys(pwd);
+		driver.findElement(By.id("username")).sendKeys($Username);
+		driver.findElement(By.id("password")).sendKeys($Password);
 		driver.manage().timeouts().implicitlyWait(100,TimeUnit.SECONDS);
 		driver.findElement(By.id("Login")).click();
 		driver.manage().timeouts().implicitlyWait(100,TimeUnit.SECONDS);
