@@ -28,8 +28,8 @@ public class UserDetails_grid
 	{
 		driver.manage().timeouts().implicitlyWait(100,TimeUnit.SECONDS);
 		//driver.get("http://c.ap5.visual.force.com/apex/Home");
-		driver.findElement(By.id("username")).System.getProperty("param1");
-		driver.findElement(By.id("password")).System.getProperty("param2");
+		driver.findElement(By.id("username")).sendKeys(System.getProperty("param1"));
+		driver.findElement(By.id("password")).sendKeys(System.getProperty("param2"));
 		driver.manage().timeouts().implicitlyWait(100,TimeUnit.SECONDS);
 		driver.findElement(By.id("Login")).click();
 		driver.manage().timeouts().implicitlyWait(100,TimeUnit.SECONDS);
